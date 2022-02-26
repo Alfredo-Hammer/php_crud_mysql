@@ -3,8 +3,8 @@
 <?php include ('include/footer.php')?>
 
 <div class="container p-4">
-
-<div class="col-md-4">
+<div class="row">
+    <div class="col-md-4">
     <div class="card card-body">
 
         <?php if(isset($_SESSION['message'])) { ?>
@@ -54,7 +54,7 @@
                                 " class = "btn btn-secondary"> 
                                     <i class = "fas fa-marker"></i>
                                 </a>
-                                <a href="edit.php?id= <?php echo $row['id'] ?>
+                                <a href="delete_task.php?id= <?php echo $row['id'] ?>
                                 "class = "btn btn-danger">            
                                     <i class = "far fa-trash alt"></i>
                                 </a>
@@ -67,5 +67,7 @@
 
 
     </div>
+
+</div>
 
 </div>
